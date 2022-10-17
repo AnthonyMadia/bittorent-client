@@ -1,0 +1,4 @@
+Most trackers use UDP because of performance reasons. Http is build on top of TCP.
+TCP guarantees that when a user sends data, the other user will receive that data in correct order -- but must create persistent connection between users before sending data which can make TCP slower than UDP.
+Use TCP for file transfer between peers because those files tend to be larger and must arrive intact.
+
