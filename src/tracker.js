@@ -5,7 +5,7 @@ const Buffer = require("buffer").Buffer;
 const urlParse = require("url").parse;
 const crypto = require("crypto");
 const torrentParser = require("./torrent-parser");
-const util = require("./utils");
+const util = require("../utils");
 
 module.exports.getPeers = (torrent, callback) => {
   const socket = dgram.createSocket("udp4");
