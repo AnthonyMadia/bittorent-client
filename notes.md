@@ -17,3 +17,6 @@ Protcol Overview
   4. At this point you're ready to start requesting. You can do this by sending "request" messages, which contains the index of the piece that you want.
   5. Finally, you will receive a piece message, which will contain the bytes of data that requested. 
 
+
+- "piece length" property tells you how long a piece is in bytes. Let's say hypothetically that you have a piece length of 1000 bytes. Then if the total size of the file(s) is 12000 bytes, the file should 12 pieces.
+
